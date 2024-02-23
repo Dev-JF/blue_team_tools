@@ -20,5 +20,21 @@ Loops over a list of IPs in a json file, returns a list of:
 
   Places the results in a Json file
 
+  current state:
 
-  ## Tool 2: Nessus local network scan
+  is only checking one IP address, still requires:
+
+  - json file to read ip
+  - loop over IPs
+  - export results to a json file
+
+
+## Tool 2: Nessus local network scan
+
+requires: nessrest python package, nessus installed and configued (nessuss essential used)
+
+Objective: conduct a nessus scan of the internal network for open ports, vulnerabilites and to ensure the network is secure to an acceptal level.
+
+Note: similar goal to tool 1, however more focused for internal use to prevent potential intruders from pivoting or privellege escalation internally.
+
+
