@@ -38,3 +38,11 @@ Objective: conduct a nessus scan of the internal network for open ports, vulnera
 Note: similar goal to tool 1, however more focused for internal use to prevent potential intruders from pivoting or privellege escalation internally.
 
 
+
+
+## Tool 3: Scapy network scanning
+
+This tools has a few functions and a couple of planned functions.
+
+Objective: To make a customisable packet captuirng/ network scanning tool.
+
