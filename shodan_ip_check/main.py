@@ -1,25 +1,34 @@
 import shodan
+import json
 
-
+iplist_json = open('iplist.json')
 
 SHODAN_API_KEY = ""
 
 api = shodan.Shodan(SHODAN_API_KEY)
 
 
+data = json.load(iplist_json)
 
-ip_info = api.host('47.97.242.49')
+for item in data['ip_add']:
 
- # Extract open ports information
-open_ports = ip_info.get('ports')
-product = ip_info.get('product')
-os = ip_info.get('os')
-vulns = ip_info.get('vulns')
+    ip = item["ip"]
+    
+    """"
+    ip_info = api.host(ip)
+    
+    # Extract open ports information
+    open_ports = ip_info.get('ports')
+    product = ip_info.get('product')
+    os = ip_info.get('os')
+    vulns = ip_info.get('vulns')
    
    
 
-print("Open Ports:", open_ports)
-print("Product:", product)
-print("OS:", os)
-print("CVEs:", vulns)
+    print("Open Ports:", open_ports)
+    print("Product:", product)
+    print("OS:", os)
+    print("CVEs:", vulns)
 
+    """
+    print(ip)
