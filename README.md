@@ -1,5 +1,5 @@
 # blue_team_tools
-Blue Team Scripts to help automate network protection
+Blue Team Scripts to help network protection
 
 
 
@@ -42,7 +42,15 @@ Note: similar goal to tool 1, however more focused for internal use to prevent p
 
 ## Tool 3: Scapy network scanning
 
-This tools has a few functions and a couple of planned functions.
+Objective: To make a customisable packet captuirng/ network scanning tool. This allows the information gathering within a network (externally and internally) to help 
+blue teams discover what areas in their network are exposed
 
-Objective: To make a customisable packet captuirng/ network scanning tool.
+requires: scapy python packet
+
+This tool has a few functions including:
+- a syn scan with set ports to scan with the ip address
+- dns scan to validate dns information
+- a traceroute scan
+- Passive OS scan (the example used is a linux fingerprint)
+
 
