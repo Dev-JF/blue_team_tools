@@ -29,14 +29,16 @@ Loops over a list of IPs in a json file, returns a list of:
   - export results to a json file
 
 
-## Tool 2: Nessus local network scan
+## Tool 2: Malicous IP/ URL checker - Under development
 
-requires: nessrest python package, nessus installed and configued (nessuss essential used)
+requires: 
 
-Objective: conduct a nessus scan of the internal network for open ports, vulnerabilites and to ensure the network is secure to an acceptal level.
+Objective: utlises API to verify the vlaidity of an URL or IP address to confirm if its known malicious URL or IP
 
-Note: similar goal to tool 1, however more focused for internal use to prevent potential intruders from pivoting or privellege escalation internally.
+Functions:
 
+- input a list in json of url or ip
+- run the code, wait for the response
 
 
 
@@ -52,5 +54,6 @@ This tool has a few functions including:
 - dns scan to validate dns information
 - a traceroute scan
 - Passive OS scan (the example used is a linux fingerprint)
+
 
 
