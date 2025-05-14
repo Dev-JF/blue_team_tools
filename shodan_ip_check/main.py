@@ -14,7 +14,7 @@ for item in data['ip_add']:
 
     ip = item["ip"]
     
-    """"
+    
     ip_info = api.host(ip)
     
     # Extract open ports information
@@ -30,5 +30,5 @@ for item in data['ip_add']:
     print("OS:", os)
     print("CVEs:", vulns)
 
-    """
+   
     print(ip)
